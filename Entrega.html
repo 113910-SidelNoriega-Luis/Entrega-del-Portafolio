@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><link
+            rel="stylesheet" href="Estilos.css">
+        <link rel="stylesheet" href="Estilos.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+
+        <title>Portafolio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar fixed-top"
+                style="background-color: #1a47d2 ;padding-left: 10%;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="Imagenes/OIP.jpeg" alt="Logo" width="35"
+                            height="29"
+                            class="d-inline-block align-text-top">
+                        <span style="color: whitesmoke;"> LUIS ANTONIO SIDEL
+                            NORIEGA </span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main class="mt-5" id="Presentacion">
+            <div class="portada">
+                <div class="container text-center"
+                    style="padding-top: 4%;padding-bottom: 4%;">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <div class="perfil">
+                                <img src="Imagenes/foto de perfil-1.jpg"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 style="color: whitesmoke;">
+                                LUIS ANTONIO <br>SIDEL NORIEGA</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md mt-3">
+                <div
+                    style="padding-left: 20%;padding-right: 20%;">
+                    <p class="text-center"
+                        style="font-size: 20px; color: whitesmoke ;min-width: 25vh;">
+                        Hola!! Soy estudiante de la Tecnicatura
+                        Universtiaria en
+                        Programación, que se dicta en la Universidad
+                        Tecnologica
+                        Nacional. <br>
+                        Soy desarrollador Backend que apunta al manejo y
+                        desarrollo
+                        de Bases de datos.
+                    </p>
+                </div>
+            </div>
+            <div class="lenguajes container-md">
+                <div class="text-center ">
+                    <h1>
+                        Habilidades en
+                    </h1>
+                </div>
+                <div class="flechas">
+                </div>
+                <div class="container-md text-center" id="divCardsHabilidades">
+                </div>
+            </div>
+        </main>
+        <div class="divContacto container-md mt-3" style="margin-bottom: 5%;">
+            <div class="card cartContact" style="width: 36rem;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre"
+                                class="form-label  labelscontact">Nombre</label>
+                            <input type="text" class="form-control" id="nombre"
+                                placeholder>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label labelscontact">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Asunto" class="form-label labelscontact">Asunto</label>
+                        <input type="text" class="form-control" id="Asunto"
+                            placeholder>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label labelscontact">Comentario</label>
+                        <textarea class="form-control" id="comentario" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="Env">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <script src="Sript.js">
+          </script>
+    </body>
+</html>

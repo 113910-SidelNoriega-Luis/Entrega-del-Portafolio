@@ -1,0 +1,100 @@
+body {
+    background-color: #1976fc !important;
+    min-width: 50vh;
+
+}
+
+.portada {
+    background-image: url(Imagenes/giphy.gif);
+    background-size: cover;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.perfil img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.flechas {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #000;
+    animation: arrow-fall 1s infinite;
+    animation-delay: calc(var(--delay) * -5s);
+}
+
+@keyframes arrow-fall {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+#divCardsHabilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cardHabilidades {
+
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    height: 11rem;
+    width: 12rem;
+}
+
+.col-tam {
+    text-align: center;
+}
+
+.card-mani {
+    margin-top: 5%;
+    margin-right: 5% !important;
+    margin-bottom: 3%;
+}
+
+#divCardsHabilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.divContacto {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    margin-top: 3%;
+}
+
+.labelscontact {
+    font-size: 20px;
+}
